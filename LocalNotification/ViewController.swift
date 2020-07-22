@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // var shortcutItem = UIApplicationShortcutItem(type: "com.jaDanRA.LocalNotification.openList",
+    // localizedTitle: "open list")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +25,11 @@ class ViewController: UIViewController {
         let content = UNMutableNotificationContent()
         content.title = "This is a reminder!"
         content.body = "Check Now!!"
-        content.sound = .default
+        // content.sound = .default
+        
+        //Play custom sound
+        content.sound = UNNotificationSound.init(named:UNNotificationSoundName(rawValue: "AnyConv.com__sound.caf"))
+        
         
         
         // Set Custom Action
@@ -45,8 +52,13 @@ class ViewController: UIViewController {
             }
         }
         
-   
     }
+    
+    func goTo() {
+        // if shortcutItem.type == "com.jaDanRA.LocalNotification.openList" {
+        
+        // performSegue(withIdentifier: "goTo", sender: self)
+    }
+    
+    
 }
-
-
