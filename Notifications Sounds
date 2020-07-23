@@ -1,1 +1,11 @@
+Notifications Sounds
 
+
+1. To play the default system sound, we can create our sound object using the default method.
+
+2. To add a custom sound file for our app, It should not be more than 30 seconds according to Apple standards.
+We can package the audio data in an aiff, wav format for the notification sound. I convert my sound file to .caf (Core Audio File Format) file.
+we can add our custom sound using UNNotificationSound with the name of your file.
+
+
+https://developer.apple.com/documentation/usernotifications/unnotificationsound
