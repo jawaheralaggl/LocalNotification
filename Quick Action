@@ -1,1 +1,25 @@
 
+Quick Action
+
+By pressing an app icon, the user obtains a set of quick actions. When the user selects a quick action to immediately access 
+functionality provided by your app, Your app activates or launches and your app delegate object receives the quick action message.
+
+
+Types:
+1. We can define static quick actions in our app’s Info.plist file in the UIApplicationShortcutItems array.
+2. We can define dynamic quick actions with the UIApplicationShortcutItem class. Then add it by using the new shortcutItems property.
+
+Both types of quick action can display up to two lines of text along with an optional icon.
+Both of UIApplicationShortcutItemType & UIApplicationShortcutItemTitle keys are required.
+
+
+
+
+
+
+
+Apple documentation:
+
+https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html
+
+https://developer.apple.com/documentation/uikit/uiapplicationshortcuticontype
