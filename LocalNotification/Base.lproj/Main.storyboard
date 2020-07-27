@@ -16,12 +16,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooV-Rg-Vbn">
-                                <rect key="frame" x="107" y="418" width="200" height="60"/>
+                                <rect key="frame" x="132" y="418" width="150" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="FKE-I2-FWv"/>
+                                    <constraint firstAttribute="width" constant="150" id="FKE-I2-FWv"/>
                                     <constraint firstAttribute="height" constant="60" id="FLo-kN-nHk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="Set Reminder">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -29,11 +29,57 @@
                                     <action selector="setReminder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vW7-dk-AQa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Notification Sound:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARI-Sv-bb0">
+                                <rect key="frame" x="48" y="144" width="318" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="318" id="67j-Ei-c6e"/>
+                                    <constraint firstAttribute="height" constant="48" id="8b5-sf-TzH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVf-FF-OhL">
+                                <rect key="frame" x="53" y="219" width="67" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="option:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b80-mq-glV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHe-Dq-A4h">
+                                <rect key="frame" x="163" y="219" width="67" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="option:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ifn-9C-Ie4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crW-zf-vdz">
+                                <rect key="frame" x="277" y="219" width="67" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="option:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3f4-3g-pR1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.30967053770000003" green="0.47210192680000002" blue="0.80896085500000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ooV-Rg-Vbn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eqY-aP-gzX"/>
-                            <constraint firstItem="ooV-Rg-Vbn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vGn-Zv-Wga"/>
+                            <constraint firstItem="ARI-Sv-bb0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="82i-bg-bea"/>
+                            <constraint firstItem="ooV-Rg-Vbn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IdO-9b-Pmg"/>
+                            <constraint firstItem="ooV-Rg-Vbn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SeT-AO-0d9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ARI-Sv-bb0" secondAttribute="trailing" constant="48" id="vAy-id-LTW"/>
+                            <constraint firstItem="ARI-Sv-bb0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="x0X-DC-qpH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

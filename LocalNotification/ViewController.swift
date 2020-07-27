@@ -13,24 +13,40 @@ class ViewController: UIViewController {
     // var shortcutItem = UIApplicationShortcutItem(type: "com.jaDanRA.LocalNotification.openList",
     // localizedTitle: "open list")
     
+    let content = UNMutableNotificationContent()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
+    @IBAction func option(_ sender: UIButton) {
+        
+        let optionSound = sender.currentTitle
+        
+        //Play custom sound
+        switch optionSound {
+        case "1":
+            content.sound = UNNotificationSound.init(named:UNNotificationSoundName(rawValue: "ring1.caf"))
+            print("you chose: 1")
+        case "2":
+            content.sound = UNNotificationSound.init(named:UNNotificationSoundName(rawValue: "ring2.caf"))
+            print("you chose: 2")
+  
+        default:
+            content.sound = UNNotificationSound.init(named:UNNotificationSoundName(rawValue: "ring3.caf"))
+            print("you chose: 3")
+        }
+        
+    }
     
     @IBAction func setReminder(_ sender: Any) {
         
         let center = UNUserNotificationCenter.current()
-        let content = UNMutableNotificationContent()
+       
         content.title = "This is a reminder!"
         content.body = "Check Now!!"
-        // content.sound = .default
-        
-        //Play custom sound
-        content.sound = UNNotificationSound.init(named:UNNotificationSoundName(rawValue: "AnyConv.com__sound.caf"))
-        
-        
+      
         
         // Set Custom Action
         let categoryIdentifier = "reminder.action"
