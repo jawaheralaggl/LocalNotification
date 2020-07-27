@@ -13,6 +13,11 @@
 		A576048424C5AEF00035C779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A576048224C5AEF00035C779 /* Main.storyboard */; };
 		A576048624C5AEFB0035C779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A576048524C5AEFB0035C779 /* Assets.xcassets */; };
 		A576048924C5AEFB0035C779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A576048724C5AEFB0035C779 /* LaunchScreen.storyboard */; };
+		A57604B324C88B800035C779 /* listController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57604B224C88B800035C779 /* listController.swift */; };
+		A57604BB24C8BAB40035C779 /* testVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57604BA24C8BAB40035C779 /* testVC.swift */; };
+		A576058924CF14180035C779 /* ring1.caf in Resources */ = {isa = PBXBuildFile; fileRef = A576058724CF14170035C779 /* ring1.caf */; };
+		A576058C24CF160A0035C779 /* ring2.caf in Resources */ = {isa = PBXBuildFile; fileRef = A576058B24CF160A0035C779 /* ring2.caf */; };
+		A576058E24CF185A0035C779 /* ring3.caf in Resources */ = {isa = PBXBuildFile; fileRef = A576058D24CF185A0035C779 /* ring3.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		A576048524C5AEFB0035C779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A576048824C5AEFB0035C779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A576048A24C5AEFB0035C779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57604B224C88B800035C779 /* listController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listController.swift; sourceTree = "<group>"; };
+		A57604BA24C8BAB40035C779 /* testVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testVC.swift; sourceTree = "<group>"; };
+		A576058724CF14170035C779 /* ring1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ring1.caf; sourceTree = "<group>"; };
+		A576058B24CF160A0035C779 /* ring2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ring2.caf; sourceTree = "<group>"; };
+		A576058D24CF185A0035C779 /* ring3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ring3.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				A576047C24C5AEF00035C779 /* AppDelegate.swift */,
 				A576047E24C5AEF00035C779 /* SceneDelegate.swift */,
 				A576048024C5AEF00035C779 /* ViewController.swift */,
+				A57604B224C88B800035C779 /* listController.swift */,
 				A576048224C5AEF00035C779 /* Main.storyboard */,
 				A576048524C5AEFB0035C779 /* Assets.xcassets */,
+				A576058724CF14170035C779 /* ring1.caf */,
+				A576058B24CF160A0035C779 /* ring2.caf */,
+				A576058D24CF185A0035C779 /* ring3.caf */,
 				A576048724C5AEFB0035C779 /* LaunchScreen.storyboard */,
 				A576048A24C5AEFB0035C779 /* Info.plist */,
+				A57604BA24C8BAB40035C779 /* testVC.swift */,
 			);
 			path = LocalNotification;
 			sourceTree = "<group>";
@@ -125,9 +140,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A576058924CF14180035C779 /* ring1.caf in Resources */,
+				A576058C24CF160A0035C779 /* ring2.caf in Resources */,
 				A576048924C5AEFB0035C779 /* LaunchScreen.storyboard in Resources */,
 				A576048624C5AEFB0035C779 /* Assets.xcassets in Resources */,
 				A576048424C5AEF00035C779 /* Main.storyboard in Resources */,
+				A576058E24CF185A0035C779 /* ring3.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A576048124C5AEF00035C779 /* ViewController.swift in Sources */,
+				A57604BB24C8BAB40035C779 /* testVC.swift in Sources */,
 				A576047D24C5AEF00035C779 /* AppDelegate.swift in Sources */,
 				A576047F24C5AEF00035C779 /* SceneDelegate.swift in Sources */,
+				A57604B324C88B800035C779 /* listController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +305,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W4MA25Y33;
 				INFOPLIST_FILE = LocalNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +324,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W4MA25Y33;
 				INFOPLIST_FILE = LocalNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
